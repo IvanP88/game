@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/bootstrap-3.3.7/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="lib/jQuery/jquery-3.1.1.js"></script>
+  <script src="lib/bootstrap-3.3.7/js/bootstrap.js"></script>
+</head>
+<body>
+<h3>Морський бій</h3>
+<table>
+  <tbody>
+  <tr>
+    <td ><span  class="">Пострілів</span></td>
+    <td><span id="fire" class="badge">0</span></td>
+  </tr>
+  <tr>
+    <td ><span  class="">Влучень</span></td>
+    <td><span id="straight" class="badge">0</span></td>
+  </tr>
+  <tr>
+    <td><span  class="">Рахунок</span></td>
+    <td><span id="score" class="badge">0</span></td>
+  </tr>
+  </tbody>
+</table>
+<div class="game text-center main_font" style="block: center;">
+  <table id="table1" class="main table-bordered">
+    <tbody>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td class="c_1 A"></td>
+      <td class="c_2 A"></td>
+      <td class="c_3 A"></td>
+      <td class="c_4 A"></td>
+      <td class="c_5 A"></td>
+      <td class="c_6 A"></td>
+      <td class="c_7 A"></td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td class="c_1 B"></td>
+      <td class="c_2 B"></td>
+      <td class="c_3 B"></td>
+      <td class="c_4 B"></td>
+      <td class="c_5 B"></td>
+      <td class="c_6 B"></td>
+      <td class="c_7 B"></td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td class="c_1 C"></td>
+      <td class="c_2 C"></td>
+      <td class="c_3 C"></td>
+      <td class="c_4 C"></td>
+      <td class="c_5 C"></td>
+      <td class="c_6 C"></td>
+      <td class="c_7 C"></td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td class="c_1 D"></td>
+      <td class="c_2 D"></td>
+      <td class="c_3 D"></td>
+      <td class="c_4 D"></td>
+      <td class="c_5 D"></td>
+      <td class="c_6 D"></td>
+      <td class="c_7 D"></td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td class="c_1 E"></td>
+      <td class="c_2 E"></td>
+      <td class="c_3 E"></td>
+      <td class="c_4 E"></td>
+      <td class="c_5 E"></td>
+      <td class="c_6 E"></td>
+      <td class="c_7 E"></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td class="c_1 F"></td>
+      <td class="c_2 F"></td>
+      <td class="c_3 F"></td>
+      <td class="c_4 F"></td>
+      <td class="c_5 F"></td>
+      <td class="c_6 F"></td>
+      <td class="c_7 F"></td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td class="c_1 G"></td>
+      <td class="c_2 G"></td>
+      <td class="c_3 G"></td>
+      <td class="c_4 G"></td>
+      <td class="c_5 G"></td>
+      <td class="c_6 G"></td>
+      <td class="c_7 G"></td>
+    </tr>
+
+  </table>
+</div>
+  <audio>
+    <source src="audio/gun_1.mp3">
+  </audio>
+  <script src="main/views/view.js" async></script>
+  <script src="main/models/model.js" async></script>
+  <script src="main/controllers/action.js" async></script>
+  <script src="main/main.js" async></script>
+</body>
+</html>
