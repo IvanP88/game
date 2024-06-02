@@ -80,7 +80,7 @@ var model = {
         var x = Math.floor(Math.random() * 7) + 1;
         var y = Math.floor(Math.random() * 7) + 1;
         for (var i in model.spaceShips) {
-            if( model.spaceShips[i].position.x == x && model.spaceShips[i].position.y == y) {
+            if( model.spaceShips[i].position.x === x && model.spaceShips[i].position.y === y) {
                 return this.genCoordinate;
             }
         }
