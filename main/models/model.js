@@ -34,7 +34,7 @@ var model = {
     },
     coordinateFire: function (x, y) { //res fire plan or asteroid
         for (var i in model.spaceShips) {
-            if(model.spaceShips[i].position.x == x && model.spaceShips[i].position.y == y) {
+            if(model.spaceShips[i].position.x === x && model.spaceShips[i].position.y === y) {
                 this.straight++;
                 this.score += model.spaceShips[i].damage;
                 return [{
@@ -54,14 +54,11 @@ var model = {
     },
 
     generatePosition : function () {
-
         for(var i in model.spaceShips) {
-
             var coordinate = model.genCoordinate();
             model.spaceShips[i].position.x = coordinate[0].x;
             model.spaceShips[i].position.y = coordinate[0].y;
-
-               var plan = Math.floor(Math.random() * 3) + 1;
+            var plan = Math.floor(Math.random() * 3) + 1;
             switch (plan) {
                 case 1 : {
                     model.spaceShips[i].plan = 1;
