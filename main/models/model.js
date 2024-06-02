@@ -55,9 +55,10 @@ var model = {
 
     generatePosition : function () {
         for(var i in model.spaceShips) {
+            const first = 0;
             var coordinate = model.genCoordinate();
-            model.spaceShips[i].position.x = coordinate[0].x;
-            model.spaceShips[i].position.y = coordinate[0].y;
+            model.spaceShips[i].position.x = coordinate.x;
+            model.spaceShips[i].position.y = coordinate.y;
             var plan = Math.floor(Math.random() * 3) + 1;
             switch (plan) {
                 case 1 : {
@@ -84,7 +85,7 @@ var model = {
                 return this.genCoordinate;
             }
         }
-        return [{"x" : x, "y" : y}];
+        return {"x" : x, "y" : y};
     },
     getCoordinateSelect : function (coordinate) {
         var x, y, image;
